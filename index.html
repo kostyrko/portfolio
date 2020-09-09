@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Mikołaj Kostyrko - CV</title>
 </head>
 
@@ -15,14 +16,14 @@
   <nav class="nav">
     <div class='logo-container'>
       <div class="avatar-container">
-        <img class='avatar' src="https://ca.slack-edge.com/TU3FBHE01-UU3JCD941-8e3e1550aaee-512"
+        <img class='avatar' src="./img/github.jpeg"
           alt="mikołaj kostyrko zdjęcie profilowe">
       </div>
       <a href="#page-top" class='logo'>Mikołaj Kostyrko</a>
     </div>
 
     <!-- linked to checkbox and acts as one -->
-    <input type="checkbox" name="" id="toggle">
+    <input type="checkbox" name="hamburger-btn" id="toggle">
     <label class="toggle" for="toggle">
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
@@ -30,19 +31,19 @@
     </label>
     <ul class="menu hamburger-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#page-top">O mnie</a>
+        <a class="nav-link" href="#page-top">Start</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#experience">Doświadczenie</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#education">Wykształcenie</a>
+        <a class="nav-link" href="#about">O mnie</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#key-skills">Kluczowe kompetencje</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#interests">Zainteresowania</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cv">kontakt/cv</a>
       </li>
     </ul>
 
@@ -50,7 +51,7 @@
   </nav>
 
   <main>
-    <section id="about" class="about">
+    <section id="start" class="start">
       <div class="section-container">
         <div class="basic-info">
           <h1>Mikołaj <span>Kostyrko</span></h1>
@@ -77,12 +78,7 @@
       </div>
     </section>
 
-    <section id="experience" class="experience">
-      <div class="section-container">
-      </div>
-    </section>
-
-    <section id="education" class="education">
+    <section id="about" class="about">
       <div class="section-container">
       </div>
     </section>
@@ -92,13 +88,18 @@
       </div>
     </section>
 
-    <section id="interests" class="interests">
+    <section id="portfolio" class="portfolio">
+      <div class="section-container">
+      </div>
+    </section>
+
+    <section id="cv" class="cv">
       <div class="section-container">
       </div>
     </section>
   </main>
 
-  <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
