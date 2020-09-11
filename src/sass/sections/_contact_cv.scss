@@ -1,0 +1,32 @@
+/* Contact/CV */
+.social {
+  display: flex;
+  border: 2px solid green;
+}
+
+.social--link {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+}
+
+.social--link:hover {
+  background-color: $yellow;
+}
+
+.social--link~.social--link {
+  margin-left: 20px;
+}
+
+.social--link i {
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.social--link i:hover {
+  font-size: 1.5rem;
+}

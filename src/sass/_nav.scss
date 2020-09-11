@@ -1,0 +1,206 @@
+.nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $dark-sand;
+  position: sticky;
+  top: 0;
+  height: 71px;
+  z-index: 10;
+}
+
+.logo-container {
+  background-color: $dark-sand;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  /* border: 1px solid red; */
+  /* justify-content:center; */
+  align-items: center;
+}
+
+.avatar {
+  display: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: $dark-gray;
+  /* ! optional */
+  /* font-weight: 600; */
+}
+
+.logo,
+.nav-link {
+  padding-left: 2vw;
+}
+
+.nav-link {
+  color: $light-gray;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: $dark-gray;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  /* text-align: center; */
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  transition: 5s ease-in-out;
+  position: fixed;
+  top: -250px;
+  background-color: $dark-sand;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.menu a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  /* border-bottom: 1px solid #eaeaea; */
+  margin: 0;
+}
+
+/* Dropdown menu when checked*/
+input[type="checkbox"]:checked ~ .menu {
+  top: 65px;
+  z-index: -1;
+}
+
+/* ========= Hamburger Button ========== */
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* position: fixed; */
+  position: relative;
+  width: 55px;
+  height: 70px;
+  cursor: pointer;
+  margin-right: 2vw;
+  /* padding: 2vw; */
+  z-index: 10;
+  background-color: $dark-sand;
+}
+
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  align-self: center;
+}
+
+.menu-btn__burger,
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  background: $dark-gray;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+/* ========= Animate Hamburger Button ========== */
+
+input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger {
+  background: transparent;
+  box-shadow: none;
+}
+#toggle:checked ~ label > .menu-btn > .menu-btn__burger::before {
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+@media only screen and (min-width: 993px) {
+  body {
+    display: flex;
+  }
+  .nav {
+    height: 100vh;
+    left: 0;
+    max-width: 300px;
+
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .nav-link {
+    padding-left: 0;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo-container {
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    min-height: 250px;
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    position: inherit;
+    text-align: center;
+    /* position: relative; */
+  }
+  .avatar-container {
+    width: 205px;
+    height: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $darker-sand;
+  }
+  .avatar-container2 {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $sand;
+}
+  .avatar {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 50%;
+  }
+  section {
+    width: 75vw;
+  }
+}

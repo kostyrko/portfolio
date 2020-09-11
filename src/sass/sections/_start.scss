@@ -1,0 +1,24 @@
+
+.basic-info {
+  h1 {
+    font-size: 2rem;
+    margin: 2% 0 0.5% 0;
+    font-weight: 600;
+    color: $dark-gray;
+  }
+  h1 span {
+    color: $dark-red;
+  }
+  p {
+    color: $blue;
+    font-size: 1.2rem;
+  }
+}
+
+.short-intro {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  margin-top: 4%;
+}
