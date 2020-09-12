@@ -84,13 +84,11 @@ input[type="checkbox"]:checked ~ .menu {
   display: flex;
   justify-content: center;
   align-content: center;
-  /* position: fixed; */
   position: relative;
   width: 55px;
   height: 70px;
   cursor: pointer;
   margin-right: 2vw;
-  /* padding: 2vw; */
   z-index: 10;
   background-color: $dark-sand;
 }
@@ -154,6 +152,7 @@ input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
 
     flex-direction: column;
     justify-content: center;
+    z-index: 0;
 
   }
   .nav-link {
@@ -174,7 +173,6 @@ input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
   .menu {
     position: inherit;
     text-align: center;
-    /* position: relative; */
   }
   .avatar-container {
     width: 205px;
