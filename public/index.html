@@ -23,7 +23,7 @@
       <a href="#page-top" class='logo'>Mikołaj Kostyrko</a>
     </div>
 
-    <!-- linked to checkbox and acts as one -->
+
     <input type="checkbox" name="hamburger-btn" id="toggle">
     <label class="toggle" for="toggle">
       <div class="menu-btn">
@@ -38,7 +38,7 @@
         <a class="nav-link" href="#key-skills">Kluczowe umiejętności</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#portfolio">Moje projekty</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">O mnie</a>
@@ -71,32 +71,72 @@
 
     <section id="key-skills" class="key-skills">
       <div class="section-container">
+        <h2>Kluczowe umiejętności</h2>
+        <ul>
+          <li class="it-skill">
+            <i class="fab fa-linkedin"></i>
+            <p class="skill-name"></p>
+          </li>
+          <li class="it-skill">
+            <i></i>
+            <p class="skill-name"></p>
+          </li>
+          <li class="it-skill">
+            <i></i>
+            <p class="skill-name"></p>
+          </li>
+          <li class="it-skill">
+            <i></i>
+            <p class="skill-name"></p>
+          </li>
+          <li class="it-skill">
+            <i></i>
+            <p class="skill-name"></p>
+          </li>
+          <li class="it-skill">
+            <i></i>
+            <p class="skill-name"></p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section id="portfolio" class="portfolio">
       <div class="section-container">
-        <h2 id="portfolio-heading">Wykonane przeze mnie projekty</h2>
+        <h2 id="portfolio-heading">
+          <span>Wykonane przeze mnie projekty</span>
+        </h2>
         <div class="portfolio-projects">
           
-          <a 
-          href="https://kostyrko.github.io/Mars-Rover-Photos/"
-          target="_blank"
-          class="project"
-          >
-            <img
-              class="projects-image"
-              src="../src/img/projects/nasa_rover.png"
-              alt="nasa curiosity mission photos"
-            >
-            <h3 class="project-title">
-              <span class="code">&lt;</span>
+          <article class="project">
+            <img class="projects-image" src="../src/img/projects/nasa_rover.png" alt="nasa curiosity mission photos">
+            <div class="projects-meta">
+              <h3 class="project-title">
+                <span class="code">&lt;</span>
                 Mars Rover Photos
                 <span class="code">&#47;&gt;</span>
-            </h3>
-          </a>
+              </h3>
+              <div class="links-container">
+                <ul class="links-list">
+                  <li class="link"><a href="https://kostyrko.github.io/Mars-Rover-Photos/" target="_blank">DEMO</a></li>
+                  <li class="link"><a href="https://github.com/kostyrko/Mars-Rover-Photos" target="_blank">REPO</a></li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Marsa pewnie nigdy osobiście nie odwiedzę, ale już teraz mogę oglądać zdjęcia z Misji Curiosity i ta
+                aplikacja mi to ułatwia.
+              </p>
+              <ul class="stack">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Fetch API</li>
+                <li>Nasa API</li>
+              </ul>
+            </div>
+          </article>
 
-          <a 
+          <article 
             href="https://kostyrko.github.io/zfrontu/"
             target="_blank"
             class="project"
@@ -106,15 +146,33 @@
               src="../src/img/projects/blog.png"
               alt="Blog"
             >
-            <h3 class="project-title">
-              <span class="code">&lt;</span>
-                Blog - notatki z frontu
-                <span class="code">&#47;&gt;</span>
-            </h3>
+            <div class="projects-meta">
+              <h3 class="project-title">
+                <span class="code">&lt;</span>
+                  Blog - notatki z frontu
+                  <span class="code">&#47;&gt;</span>
+              </h3>
+              <div class="links-container">
+                <ul class="links-list">
+                  <li class="link"><a href="https://kostyrko.github.io/Mars-Rover-Photos/" target="_blank">DEMO</a></li>
+                  <li class="link"><a href="https://github.com/kostyrko/Mars-Rover-Photos" target="_blank">REPO</a></li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Przystępując do nauki Front-endu stwierdziłem, że zrezygnuję z notatnika w formie papierowej, ten blog jest efektem tej decyzji.
+              </p>   
+              <ul class="stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Pelican</li>
+                <li>Jinja2</li>
+              </ul>
+            </div>  
+          </article>
 
-          </a>
-
-          <a 
+          <article
             href="https://github.com/kostyrko/Directory-Digger"
             target="_blank"
             class="project"
@@ -124,14 +182,30 @@
               src="../src/img/projects/digger.png"
               alt="Directory digger project"
             >
-            <h3 class="project-title">
-              <span class="code">&lt;</span>
-                  Directory Digger
-                <span class="code">&#47;&gt;</span>
-            </h3>
-          </a>
+            <div class="projects-meta">
+              <h3 class="project-title">
+                <span class="code">&lt;</span>
+                    Directory Digger
+                  <span class="code">&#47;&gt;</span>
+              </h3>
+              <div class="links-container">
+                <ul class="links-list">
+                  <li class="link"><a href="https://kostyrko.github.io/Mars-Rover-Photos/" target="_blank">DEMO</a></li>
+                  <li class="link"><a href="https://github.com/kostyrko/Mars-Rover-Photos" target="_blank">REPO</a></li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Szukasz pliku? Chcesz sprawdzić jak wygląda drzewo wybranego folderu/dysku i może chcesz je zapisać do pliku (txt/json)? Jeśli tak, to ta aplikacja jest dla Ciebie.
+              </p>
+              <ul class="stack">
+                <li>Python</li>
+                <li>tkinter</li>
+                <li>os</li>
+              </ul>            
+            </div>
+          </article>
 
-          <a 
+          <article 
             href="https://github.com/kostyrko/myBirds"
             target="_blank"
             class="project"
@@ -141,17 +215,29 @@
               src="../src/img/projects/polly.png"
               alt="Data-base project project"
             >
-            <h3 class="project-title">
-              <span class="code">&lt;</span>
-                PollyDB
-                <span class="code">&#47;&gt;</span>
-            </h3>
-            <!-- <p class="project-description">
-              <span class="code">&lt;</span>
-                Tribute page to Slavoj Žižek
-                <span class="code">&#47;&gt;</span>
-            </p> -->
-          </a>
+            <div class="projects-meta">
+              <h3 class="project-title">
+                <span class="code">&lt;</span>
+                  PollyDB
+                  <span class="code">&#47;&gt;</span>
+              </h3>
+              <div class="links-container">
+                <ul class="links-list">
+                  <li class="link"><a href="https://kostyrko.github.io/Mars-Rover-Photos/" target="_blank">DEMO</a></li>
+                  <li class="link"><a href="https://github.com/kostyrko/Mars-Rover-Photos" target="_blank">REPO</a></li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Desktopowa aplikacja pozwalająca na stworzenie własnej bazy danych zaobserwowanych ptaków.
+              </p>
+
+              <ul class="stack">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>tkinter</li>
+              </ul>
+            </div>
+          </article>
 
         </div>
       </div>
@@ -159,7 +245,7 @@
 
     <section id="about" class="about">
       <div class="section-container">
-        <h2 class=about-section-header>Kontekst</h2>
+        <h2 class="about-section-header">Kontekst</h2>
         <div class="about-info">
           <p>
             Naukę programowania rozpocząłem pod koniec 2018 roku, gdy pracowałem jako adiunkt w zakładzie Cyfrowej
@@ -177,6 +263,9 @@
             kursach poświęconych front-endowi.
           </p>
         </div>
+        <a href="#contact-cv" class="next-section">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
       </div>
       <p class="quote">
         'W moim poduszkowcu jest pełno węgorzy!' <span>(Monty Python - Rozmówki węgierskie)</span>
@@ -185,6 +274,7 @@
 
     <section id="contact-cv" class="contact-cv">
       <div class="section-container">
+        <h2 class="about-section-header">Linki</h2>
         <div class="social">
           <a target="_blank" href="https://www.linkedin.com/in/mikolaj-kostyrko-5b150879/" class="social--link">
             <i class="fab fa-linkedin"></i>
@@ -199,6 +289,9 @@
             <i class="fab fa-stack-exchange"></i>
           </a>
         </div>
+        <a href="#start" class="next-section to-top">
+          <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
+        </a>
       </div>
     </section>
   </main>
