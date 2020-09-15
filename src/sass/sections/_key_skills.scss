@@ -1,0 +1,47 @@
+.key-skills {
+  h3 {
+    font-size: 0.9rem;
+    color: $silver;
+    margin-top: 40px;
+    span {
+      font-size: 0.75rem;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      margin: 10px;
+
+      .icon {
+        height: 2rem;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+
+      }
+      p {
+        font-family: 'Fira Mono', monospace;
+        margin-top: 10px;
+        font-size: 0.75rem;
+        color: $gray;
+        }
+      &:hover {
+        .icon {
+          transform: scale(1.5);
+        }
+        p {
+          color: black;
+          transform: scale(1.5);
+          background-color: $white;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  ul ~ ul {
+    margin-top: $margin-main;
+  }
+}

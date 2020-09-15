@@ -1,5 +1,21 @@
 .about-info {
   p {
     margin: $margin-main 0;
+    line-height: 1.5rem;
+    // letter-spacing: 1px;
+    word-spacing: 8px;
+    em {
+      font-weight: 600;
+      color: $dark-orange;
+      font-style: normal;
+    }
+    span {
+      color: $gray;
+      font-size: 0.75rem;
+      word-spacing: normal;
+    }
+    a {
+      color: $blue;
+    }
   }
 }

@@ -29,7 +29,7 @@
 }
 
 .social--link~.social--link {
-  margin-left: 20px;
+  margin-left: $margin-main;
 }
 
 .social--link i {
@@ -54,4 +54,65 @@
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.contact-cv {
+  h3 {
+    margin: 40px 0 $margin-main 0;
+    color: $dark-red;
+    font-size: 0.95rem;
+  }
+  .contact--link, .cv--link {
+    display: inline-block;
+    i {
+      color: $blue;
+      font-size: 2.5rem;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+    &:hover {
+      i {
+        color: $silver;
+      }
+    }
+    &:focus, &:active {
+      i {
+        color: $dark-red;
+      }
+    }
+  }
+  .contact-links {
+    .contact-info {
+      cursor: pointer;
+    }
+    .contact-info ~ .contact-info {
+      margin-left: $margin-main;
+    }
+    p {
+      margin-top: $margin-main;
+    }
+
+    input[type=checkbox] {
+      display: none;
+    }
+    
+    .phone, .email {
+      display: none;
+    }
+    #phone-info:checked {
+      & ~ .phone {
+        display: block;
+      }
+    }
+    #email-info:checked {
+      & ~ .email {
+        display: block;
+      }
+    }
+    
+    // .email {
+    //   display: none;
+    // }
+  }
 }
