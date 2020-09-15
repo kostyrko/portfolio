@@ -18,9 +18,10 @@
       .icon {
         height: 2rem;
         font-size: 2rem;
-        width: 100%;
+        // width: 100%;
         text-align: center;
-
+        margin-left: 50%;
+        transform: translate(-50%);
       }
       p {
         font-family: 'Fira Mono', monospace;
@@ -30,7 +31,8 @@
         }
       &:hover {
         .icon {
-          transform: scale(1.5);
+          transform: translate(-50%) scale(1.5);
+          // transform: translate(-50%);
         }
         p {
           color: black;
