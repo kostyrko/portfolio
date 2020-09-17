@@ -1,3 +1,3 @@
 # portfolio
 
-... under :construction: :construction_worker:
+---> visit my [Portfolio Page](https://kostyrko.github.io/portfolio)
