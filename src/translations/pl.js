@@ -18,7 +18,7 @@ export default [{
   project_blog_description: 'Przystępując do nauki Front-endu stwierdziłem, że zrezygnuję z notatnika w formie papierowej, ten blog jest efektem tej decyzji.',
   project_digger_description: 'Szukasz pliku? Chcesz sprawdzić jak wygląda drzewo wybranego folderu/dysku i może chcesz je zapisać do pliku (txt/json)? Jeśli tak, to ta aplikacja jest dla Ciebie.',
   project_polly_description: 'Desktopowa aplikacja pozwalająca na stworzenie własnej bazy danych zaobserwowanych ptaków.',
-  
+  about_section_header: 'Kontekst',
   about__info_1: 'Naukę programowania rozpocząłem pod koniec 2018 roku od Pythona, wówczas pracowałem jako adiunkt w zakładzie Cyfrowej Geoarcheologii na Uniwersytecie w Bambergu (Niemcy). Planowałem umiejętność programowania powiązać z analizą przestrzennych danych w ujęciu chronologicznym.',
   about__info_2: 'Z czasem jednak moje zainteresowania skierowały się w stronę programowania Webowego, po krótkiej przygodzie z Back-endem postanowiłem skupić się <em>Front-endzie</em>. Na początku 2020 roku zdecydowałem się na zmianę dotychczasowej profesji i poświęcić swój czas w pełni na naukę programowania.',
   about__info_3: `Od początku zdobywam doświadczenie poprzez systematyczną naukę realizowaną we własnym zakresie oraz biorąc udział w różnego rodzaju
@@ -26,7 +26,7 @@ export default [{
   key_skills__h3_langSkills: 'Języki obce',
   english_lang: 'Angielski',
   french_lang: 'Francuski',
-  contact_links: 'Linki',
+  contact_links_header: 'Linki',
   contact_socialMedia: 'Serwisy społecznościowe',
   contact_cv__download: 'Pobierz CV',
   contact_contact: 'Kontakt',
