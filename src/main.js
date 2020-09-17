@@ -13,6 +13,7 @@ if (window.location.hash) {
     idArr.forEach(elem => {
       document.getElementById(elem).innerHTML = pl[elem]
     })
+    document.querySelector('.cv--link').href = './cv_pl.pdf'
   }
 }
 
