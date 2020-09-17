@@ -33,19 +33,25 @@
     </label>
     <ul class="menu hamburger-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#page-top">Start</a>
+        <a class="nav-link" href="#page-top" id="nav__start">Start</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#key-skills">Kluczowe umiejętności</a>
+        <a class="nav-link" href="#key-skills" id="nav__key_skills">Key skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Moje projekty</a>
+        <a class="nav-link" href="#portfolio" id="nav__portfolio">My projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">O mnie</a>
+        <a class="nav-link" href="#about" id="nav__about">About me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact-cv">kontakt/cv</a>
+        <a class="nav-link" href="#contact-cv" id="nav__contact_cv">contact & cv</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-lang nav-link' href="#eng" data-reload>English</a>
+      </li>
+      <li class='nav-item'>
+        <a  class='nav-lang nav-link'  href="#pl" data-reload>Polski</a>
       </li>
     </ul>
 
@@ -59,8 +65,8 @@
           <h1>MIKOŁAJ <span>KOSTYRKO</span></h1>
           <p>Front-end Developer</p>
         </div>
-        <div class="short-intro">
-          <p>Skupiam się na co sprawia mi przyjemność i przynosi satysfakcję - nauce nowych oraz rozwijaniu posiadanych przeze mnie umiejętności.
+        <div class="short-intro" id='start__intro'>
+          <p>I focus on things that bring me pleasure and satisfaction - learning new and developing know skills.
           </p>
         </div>
         <a href="#key-skills" class="next-section">
@@ -72,7 +78,7 @@
 
     <section id="key-skills" class="key-skills">
       <div class="section-container">
-        <h2>Kluczowe umiejętności</h2>
+        <h2 id="key_skills__h2">Key skills</h2>
 
         <ul id="key-skills-it" class="key-skills-it">
           <li class="it-skill">
@@ -81,7 +87,7 @@
           </li>
           <li class="it-skill">
             <i class="fab fa-react icon"></i>
-            <p class="skill-name">React <span>(nauka)</span></p>
+            <p class="skill-name">React <span id='skill_react__additional'>(learning)</span></p>
           </li>
           <li class="it-skill">
             <i class="fab fa-css3-alt icon"></i>
@@ -101,7 +107,7 @@
           </li>
         </ul>
 
-        <h3>Narzędzia</h3>
+        <h3 id="key_skills__h3_tools">IT-Tools</h3>
         <ul id="tools-list" class="tools-list">  
           <li class="it-tool">
             <i class="fab fa-git-alt icon"></i>
@@ -121,7 +127,7 @@
           </li>
         </ul>
 
-        <h3>Znajomość <span>(niewielkie doświadczenie)</span> </h3>
+        <h3 id="key_skills__h3_knowledge">Knowledge <span>(with little experience)</span> </h3>
         <ul id="additional-skills-list" class="additional-skills-list">
           <li class="additional-skill">
             <i class="fab fa-python icon"></i>
@@ -148,7 +154,8 @@
             <p class="skill-name">SQL</p>
           </li>
         </ul>
-        <h3>Znajomość <span>oraz niekomercyjne doświadczenie pracy w metodologii oraz narzędziami</span> </h3>
+
+        <h3 id='key_skills__h3_softSkills'>Knowledge <span>and non-commercial experience</span> </h3>
         <ul id="soft-skills-list" class="soft-skills-list">
           <li class="soft-skill">
             <i class="fas fa-users-cog icon"></i>
@@ -159,13 +166,13 @@
             <p class="skill-name">Kanban</p>
           </li>
         </ul>
-        <h3>Języki obce</h3>
+        <h3 id='key_skills__h3_langSkills'>Language skills</h3>
         <ul id="languages-list" class="languages-list">
           <li class="soft-skill">
-            <i class="far fa-comment-dots icon"></i>            <p class="lang-name">Angielski <span>C1</span></p>
+            <i class="far fa-comment-dots icon"></i>            <p class="lang-name" id='english_lang'>English <span>C1</span></p>
           </li>
           <li class="soft-skill">
-            <i class="far fa-comment icon"></i>            <p class="lang-name">Francuski <span>A2</span></p>
+            <i class="far fa-comment icon"></i>            <p class="lang-name" id='french_lang'>French <span>A2</span></p>
           </li>
         </ul>
       </div>
@@ -174,14 +181,14 @@
     <section id="portfolio" class="portfolio">
       <div class="section-container">
         <h2 id="portfolio-heading">
-          <span>Wykonane przeze mnie projekty</span>
+          <span id="portfolio_heading_span">My projects</span>
         </h2>
         <div class="portfolio-projects">
           
           <article class="project">
             <img class="projects-image" src="../src/img/projects/nasa_rover.png" alt="nasa curiosity mission photos">
             <div class="projects-meta">
-              <h3 class="project-title">
+              <h3 class="project-title" id='project_mars_title'>
                 <span class="code">&lt;</span>
                 Mars Rover Photos
                 <span class="code">&#47;&gt;</span>
@@ -192,9 +199,8 @@
                   <li class="link"><a href="https://github.com/kostyrko/Mars-Rover-Photos" target="_blank">REPO</a></li>
                 </ul>
               </div>
-              <p class="project-description">
-                Marsa pewnie nigdy osobiście nie odwiedzę, ale już teraz mogę oglądać zdjęcia z Misji Curiosity i ta
-                aplikacja mi to ułatwia.
+              <p class="project-description" id='project_mars_description'>
+                I will probably never visit Mars in person, but I can already see photos from the Curiosity Mission and this application makes it easier to do it.
               </p>
               <ul class="stack">
                 <li>HTML</li>
@@ -217,9 +223,9 @@
               alt="Blog"
             >
             <div class="projects-meta">
-              <h3 class="project-title">
+              <h3 class="project-title" id='project_blog_title'>
                 <span class="code">&lt;</span>
-                  Blog - notatki z frontu
+                  Blog - notes from the front
                   <span class="code">&#47;&gt;</span>
               </h3>
               <div class="links-container">
@@ -228,8 +234,8 @@
                   <li class="link"><a href="https://github.com/kostyrko/Notatki-z-frontu-source-code/tree/master/source" target="_blank">REPO</a></li>
                 </ul>
               </div>
-              <p class="project-description">
-                Przystępując do nauki Front-endu stwierdziłem, że zrezygnuję z notatnika w formie papierowej, ten blog jest efektem tej decyzji.
+              <p class="project-description" id='project_blog_description'>
+                When I begin learning Front-end, I decided that I should give up a paper notebook and this blog is the result of this decision
               </p>   
               <ul class="stack">
                 <li>HTML</li>
@@ -263,8 +269,8 @@
                   <li class="link"><a href="https://github.com/kostyrko/Directory-Digger" target="_blank">REPO</a></li>
                 </ul>
               </div>
-              <p class="project-description">
-                Szukasz pliku? Chcesz sprawdzić jak wygląda drzewo wybranego folderu/dysku i może chcesz je zapisać do pliku (txt/json)? Jeśli tak, to ta aplikacja jest dla Ciebie.
+              <p class="project-description" id='project_digger_description'>
+                Looking for a file? Do you want to check a tree directory of a certain folder or a drive and even save it to a file (txt / json)? If yes, then this app if for you.
               </p>
               <ul class="stack">
                 <li>Python</li>
@@ -295,8 +301,8 @@
                   <li class="link"><a href="https://github.com/kostyrko/myBirds" target="_blank">REPO</a></li>
                 </ul>
               </div>
-              <p class="project-description">
-                Desktopowa aplikacja pozwalająca na stworzenie własnej bazy danych zaobserwowanych ptaków.
+              <p class="project-description" id='project_polly_description'>
+                A lightweight desktop application that allows you to create your own database of bird sightings.
               </p>
 
               <ul class="stack">
@@ -315,18 +321,16 @@
       <div class="section-container">
         <h2 class="about-section-header">Kontekst</h2>
         <div class="about-info">
-          <p>
-            Naukę programowania rozpocząłem pod koniec 2018 roku od Pythona, wówczas pracowałem jako adiunkt w zakładzie Cyfrowej
-            Geoarcheologii na Uniwersytecie w Bambergu (Niemcy). Planowałem
-            umiejętność programowania powiązać z analizą przestrzennych danych w ujęciu chronologicznym.
+          <p id='about__info_1'>
+            I started learning programming at the end of 2018 focusing on Python, at that time I was working as an Research Associate in the Digital Geoarchaeology Group at the University of Bamberg (Germany). My plan was to combine programming skills with the analysis of spatial data in chronological terms.
           </p>
 
-          <p>
-            Z czasem jednak moje zainteresowania skierowały się w stronę programowania Webowego, po krótkiej przygodzie z Back-endem postanowiłem skupić się <em>Front-endzie</em>. Na początku 2020 roku zdecydowałem się na zmianę dotychczasowej profesji i poświęcić swój czas w pełni na naukę programowania.
+          <p id='about__info_2'>
+            With time, however, my interests turned to Web development, after a short period of learning Back-end I decided to focus on <em>Front-end</em>. At the beginning of 2020, I've decided to change my profession and devote my time fully to learning programming.
           </p>
-          <p>
-            Od początku zdobywam doświadczenie poprzez systematyczną naukę realizowaną we własnym zakresie oraz biorąc udział w różnego rodzaju
-            kursach <span>( np. CodersLab - JavaScript Developer (<a href="https://coderslab.user.com/media/uploads/lduvtk-coderslab/szczegolowy-program-kursu-javascript-developer-17-06-2020-e257aae58a3b.pdf" target="_blank">program kursu</a>), patrz również <a href="https://www.udemy.com/user/mkostyrko/" target="_blank"> mój profil na Udemy</a> )</span>.
+
+          <p id='about__info_3'>
+            From the very beginning I have been gaining experience through systematic self-directed learning and by taking part in various courses <span>( ie. CodersLab - JavaScript Developer (<a href="https://coderslab.user.com/media/uploads/lduvtk-coderslab/szczegolowy-program-kursu-javascript-developer-17-06-2020-e257aae58a3b.pdf" target="_blank">syllabus</a>), visit: <a href="https://www.udemy.com/user/mkostyrko/" target="_blank"> my Udemy profile</a> )</span>.
           </p>
         </div>
         <a href="#contact-cv" class="next-section">
@@ -337,8 +341,8 @@
 
     <section id="contact-cv" class="contact-cv">
       <div class="section-container">
-        <h2 class="about-section-header">Linki</h2>
-        <h3>Serwisy społecznościowe</h3>
+        <h2 class="about-section-header" id='contact_links' >Links</h2>
+        <h3 id='contact_socialMedia'>Social media</h3>
         <div class="social">
           <a target="_blank" href="https://www.linkedin.com/in/mikolaj-kostyrko-5b150879/" class="social--link">
             <i class="fab fa-linkedin"></i>
@@ -354,13 +358,13 @@
           </a>
         </div>
         <div class="other-links">
-          <h3>Pobierz CV</h3>
+          <h3 id='contact_cv__download'>Download CV</h3>
           <a target="_blank" href="./cv_pl.pdf" class="cv--link">
             <i class="fas fa-file-pdf"></i>
           </a>
         </div>
         <div class="contact-links">
-          <h3>Kontakt</h3>
+          <h3 id='contact_contact'>Contact</h3>
 
           <input type="checkbox" name="contact-btn" id="email-info"/>
           <label class="contact-info" for="email-info" >
@@ -388,7 +392,7 @@
     </section>
   </main>
 
-  <script src="../src/main.js"></script>
+  <script src="../src/main.js" type="module"></script>
 </body>
 
 </html>

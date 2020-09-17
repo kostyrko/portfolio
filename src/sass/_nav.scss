@@ -43,6 +43,18 @@
   font-weight: 600;
 }
 
+.nav-lang {
+  color:$light-gray;
+  background-color: $darker-sand;
+  letter-spacing: 2px;
+}
+
+.nav-item:nth-of-type(6) {
+  margin-top: 25px;
+  border-top: 2px solid $sand;
+}
+
+
 .menu a:hover {
   color: $dark-gray;
 }
