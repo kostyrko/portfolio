@@ -15,6 +15,7 @@ section {
   z-index: -10;
   padding: 10px 0;
   border-bottom: 1px solid $light-gray;
+  padding-top: 70px; 
 }
 
 .section-container, .quote {
@@ -72,5 +73,11 @@ h2 {
   }
   50% {
     top: 10px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  section {
+    padding-top: 0;
   }
 }
