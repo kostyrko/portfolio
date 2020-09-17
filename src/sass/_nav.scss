@@ -43,6 +43,14 @@
   font-weight: 600;
 }
 
+.active {
+  color: $white;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  // background-color: $darker-sand;
+  // border-bottom: 3px solid $sand;
+}
+
 .nav-lang {
   color:$light-gray;
   background-color: $darker-sand;
@@ -50,6 +58,8 @@
 }
 
 .nav-item:nth-of-type(6) {
+  // justify-self: end;
+  // align-self: end;
   margin-top: 25px;
   border-top: 2px solid $sand;
 }
@@ -61,6 +71,7 @@
 
 #toggle {
   display: none;
+  position: relative;
 }
 
 .menu {
@@ -70,7 +81,7 @@
   top: 80px;
   transition: 5s ease-in-out;
   position: fixed;
-  top: -250px;
+  top: -320px;
   background-color: $dark-sand;
   transition: all 0.5s ease;
   overflow: hidden;
@@ -89,6 +100,7 @@
 input[type="checkbox"]:checked ~ .menu {
   top: 65px;
   z-index: -1;
+
 }
 
 /* ========= Hamburger Button ========== */
