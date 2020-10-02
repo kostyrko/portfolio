@@ -1,24 +1,20 @@
 .portfolio .section-container {
   margin: $margin-main 0;
-  // border: 1px solid red;
   h2 {
-    // border: 1px solid red;
     text-align: center;
   }
 }
 
 #portfolio-heading {
   span {
-    // border: 1px solid red;
     padding: 1.5%;
     border-bottom: 2px solid $dark-gray;
     box-shadow: 0 2px 2px -2px gray;
-
   }
 }
 
 .portfolio-projects {
-  margin-top: $margin-main*2;
+  margin-top: $margin-main * 2;
   display: flex;
   flex-wrap: wrap;
   z-index: -1;
@@ -28,10 +24,9 @@
 
 .project {
   max-width: 400px;
-  height: 500px;
+  height: 550px;
   margin: $margin-main;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-
   background-color: $white;
   transition: all 0.25s ease-in-out;
   border-radius: 25px;
@@ -65,7 +60,6 @@
     justify-content: space-between;
 
     height: 50%;
-
   }
   .code {
     color: $blue;
@@ -82,19 +76,19 @@
     padding: 8px 20px;
     border-radius: 25px;
     margin: 10px;
-    box-shadow: 1px 1px 2px  rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     &:active {
       transform: translateY(2px);
     }
-    &:hover{
-      filter: brightness(1.2)
+    &:hover {
+      filter: brightness(1.2);
     }
     a {
       color: $white;
     }
   }
   .project-description {
-    font-family: 'Fira Mono', monospace;
+    font-family: "Fira Mono", monospace;
     font-size: 0.8rem;
     color: $gray;
     padding: $padding-main;
@@ -117,7 +111,6 @@
   }
 }
 
-
 .projects-image {
   object-fit: cover;
   width: 100%;
@@ -135,6 +128,3 @@
   // border: 1px solid $blue;
   /* width: 50vw; */
 }
-
-
-
