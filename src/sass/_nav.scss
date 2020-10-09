@@ -3,20 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $dark-sand;
+  background-color: $blue;
   position: sticky;
   top: 0;
-  height: 71px;
+  height: 51px;
   z-index: 10;
 }
 
 .logo-container {
-  background-color: $dark-sand;
+  background-color: $blue;
   width: 100vw;
-  height: 70px;
+  height: 50px;
   display: flex;
-  /* border: 1px solid red; */
-  /* justify-content:center; */
   align-items: center;
 }
 
@@ -26,7 +24,7 @@
 
 .logo {
   font-size: 1.5rem;
-  color: $dark-gray;
+  color: $white;
   /* ! optional */
   /* font-weight: 600; */
 }
@@ -53,7 +51,7 @@
 
 .nav-lang {
   color:$light-gray;
-  background-color: $darker-sand;
+  background-color: $blue;
   letter-spacing: 2px;
 }
 
@@ -61,7 +59,7 @@
   // justify-self: end;
   // align-self: end;
   margin-top: 25px;
-  border-top: 2px solid $sand;
+  border-top: 2px solid $light-blue;
 }
 
 
@@ -82,7 +80,7 @@
   transition: 5s ease-in-out;
   position: fixed;
   top: -320px;
-  background-color: $dark-sand;
+  background-color: $blue;
   transition: all 0.5s ease;
   overflow: hidden;
   z-index: -1;
@@ -98,7 +96,7 @@
 
 /* Dropdown menu when checked*/
 input[type="checkbox"]:checked ~ .menu {
-  top: 65px;
+  top: 50px;
   z-index: -1;
 
 }
@@ -110,17 +108,17 @@ input[type="checkbox"]:checked ~ .menu {
   align-content: center;
   position: relative;
   width: 55px;
-  height: 70px;
+  height: 50px;
   cursor: pointer;
   margin-right: 2vw;
   z-index: 10;
-  background-color: $dark-sand;
+  background-color: $blue;
 }
 
 .menu-btn__burger {
-  width: 50px;
-  height: 6px;
-  border-radius: 5px;
+  width: 40px;
+  height: 4px;
+  border-radius: 15px;
   transition: all 0.5s ease-in-out;
   align-self: center;
 }
@@ -135,18 +133,18 @@ input[type="checkbox"]:checked ~ .menu {
 .menu-btn__burger::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 6px;
-  border-radius: 5px;
+  width: 40px;
+  height: 4px;
+  border-radius: 15px;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
-  transform: translateY(-16px);
+  transform: translateY(-12px);
 }
 
 .menu-btn__burger::after {
-  transform: translateY(16px);
+  transform: translateY(12px);
 }
 
 /* ========= Animate Hamburger Button ========== */
@@ -205,7 +203,7 @@ input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: $darker-sand;
+    background-color: $lighter-blue;
   }
   .avatar-container2 {
   width: 190px;
@@ -214,7 +212,7 @@ input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: $sand;
+  background-color: $light-blue;
 }
   .avatar {
     width: 180px;
