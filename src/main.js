@@ -11,7 +11,7 @@ if (window.location.hash) {
     idArr.forEach(elem => {
       document.getElementById(elem).innerHTML = pl[elem]
     })
-    document.querySelector('.cv--link').href = './cv_pl.pdf'
+    document.querySelector('.cv--link').href = './mikolajkostyrko_cv_pl.pdf'
   }
 }
 
