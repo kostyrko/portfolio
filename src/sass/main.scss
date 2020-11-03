@@ -1,8 +1,13 @@
 @import 'variables';
 @import 'reset';
+//layout
 @import 'base';
 @import 'nav';
 
+// decorations
+@import 'decorations';
+
+// sections
 @import './sections/about';
 @import './sections/_contact_cv';
 @import './sections/portfolio';

@@ -1,0 +1,53 @@
+
+section {
+  position: relative;
+}
+
+.decoration {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+.decoration-1, .decoration-2,.decoration-4 {
+  background-size: 100%;
+  background-position: 90% 90%;
+}
+
+.decoration-1 {
+  background-image: url('../img/decorations/undraw_working_from_anywhere_ub67\ \(1\).svg');
+}
+
+.decoration-2 {
+  background-image: url('../img/decorations/settings-line.svg');
+  background-size: 50%;
+  opacity: 0.05;
+}
+
+.decoration-3 {
+  background-image: url('../img/decorations/innovation.svg');
+  background-position: center;
+  opacity: 0.03;
+  background-size: 50%;
+}
+
+.decoration-4 {
+  background-image: url('../img/decorations/undraw_my_personal_files_8krs.svg');
+}
+
+
+
+
+@media only screen and (min-width: 650px) {
+  // section {
+  //   position: relative;
+  // }
+  .decoration-1, .decoration-4 {
+    background-size: 25%;
+  }
+  // .decoration-1, .decoration-2,.decoration-4 {
+  //   background-position: 60% 90%;
+  // }
+}
