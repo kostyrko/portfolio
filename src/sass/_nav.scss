@@ -1,4 +1,6 @@
 .nav {
+  // font-family: 'Fira Mono', monospace;
+  letter-spacing: 1px;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -45,8 +47,6 @@
   color: $white;
   letter-spacing: 2px;
   font-size: 1rem;
-  // background-color: $darker-sand;
-  // border-bottom: 3px solid $sand;
 }
 
 .nav-lang {
@@ -64,7 +64,7 @@
 
 
 .menu a:hover {
-  color: $dark-gray;
+  color: $white;
 }
 
 #toggle {
@@ -108,7 +108,7 @@ input[type="checkbox"]:checked ~ .menu {
   align-content: center;
   position: relative;
   width: 55px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
   margin-right: 2vw;
   z-index: 10;
@@ -158,6 +158,47 @@ input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger {
 }
 input[type="checkbox"]:checked ~ label > .menu-btn > .menu-btn__burger::after {
   transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 1100px)   {
+  .nav {
+    display: flex;
+    .toggle {
+      display: none;
+    }
+    .logo-container {
+      width: 20vw;
+    }
+    .active {
+      color: $white;
+      border-bottom: 3px solid $sand;
+    }
+    .menu {
+      height: 100%;
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      .nav-item{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        
+        &:nth-of-type(5) {
+          padding-right: 15px;
+        }
+        &:nth-of-type(6) {
+          border: none;
+          border-left: 1px solid $white;
+        }
+        a {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
 }
 
 // @media only screen and (max-width: 992px) {
