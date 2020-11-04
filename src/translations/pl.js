@@ -13,7 +13,8 @@ export default [
     key_skills__h3_knowledge: "Znajomość (niewielkie doświadczenie)",
     key_skills__h3_softSkills:
       "Znajomość oraz niekomercyjne doświadczenie pracy w metodologii oraz narzędziami",
-
+      donate_charity_title :'',
+      project_donate_charity: 'Koncept strony, która pozwala na przekazywanie pomocy materialnej organizacjom pozarządowym. Kompozycja strony oraz jej stylistyka jest częścią/własnością CodersLab (Portfolio Lab)',
     flacky_meble_title: `<span class="code">&lt;</span>
   Flacky Combination - Meble
   <span class="code">&#47;&gt;</span>`,
