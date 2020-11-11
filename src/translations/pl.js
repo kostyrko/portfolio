@@ -8,7 +8,6 @@ export default [
     start__intro:
       "Skupiam się na co sprawia mi przyjemność i przynosi satysfakcję - nauce nowych oraz rozwijaniu posiadanych przeze mnie umiejętności.",
     key_skills__h2: "Kluczowe umiejętności",
-    skill_react__additional: "(nauka)",
     key_skills__h3_tools: "Narzędzia",
     key_skills__h3_knowledge: "Znajomość (niewielkie doświadczenie)",
     key_skills__h3_softSkills:
